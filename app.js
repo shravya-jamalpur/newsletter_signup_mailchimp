@@ -4,7 +4,7 @@ const https = require("https");
 const body_parser = require("body-parser");
 const request = require("request");
 require("dotenv").config();
-
+console.log(process.env);
 app.use(body_parser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
